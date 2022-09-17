@@ -1,24 +1,38 @@
 <!DOCTYPE html>
 <html lang=“en”>
-<head>
-    <meta charset=“UTF-8”>
-    <meta name=“viewport” content=width=device-width, initial-scale=1.0”
-</head>
-<body>
+    <head>
+        <meta charset=“UTF-8”>
+        <meta name=“viewport” content=width=device-width, initial-scale=1.0”>
+    </head>
+    <body>
 
-<p>Clicks: <span id="score">0</span></p>
-<img src="images/Click.png" height="64px" width="64px" onclick="addToScore(1)">
+    <h2>Score: <span id="score">0</span></h2>
+    <img src="images/Click.png" height="256px" width="256px" onclick="addToScore(1)">
 
-<button>Cursor [<span id"cursorcost">10</span>] -- <span id="cursors">0</span></button>
+    <button onclick="BuyCursor()">Cursor [<span id"cursorcost">10</span>] -- <span id="cursors">0</span></button>
 
-<script>
-    var score = 0;
+    <script>
+        var score = 0;
 
-    function addtoScore(amount) {
-        score = score + amount;
-        document.getElementId("score").innerhtml = score;
-    }
-</script>
+        var cursorCost = 15;
+        var cursors = 0;
 
-</body>
+        function buyCursor() {
+            if (score >= cursorCost) {
+                score = score - cursorCost;
+                cursors = cursors + 1;
+                cursorCost = Math.round(cursorCost * 1.15;
+
+                document.getElementId("score").innerhtml = score;
+                document.getElementId("cursorCost").innerhtml = cursorCost;
+                document.getElementId("cursor").innerhtml = cursors;
+            }
+        }
+
+        function addtoScore(amount) {
+            score = score + amount;
+            document.getElementId("score").innerhtml = score;
+        }
+        </script>
+    </body>
 </html>
