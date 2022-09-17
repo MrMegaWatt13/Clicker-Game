@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang=“en”>
+<head>
+    <meta charset=“UTF-8”>
+    <meta name=“viewport” content=width=device-width, initial-scale=1.0”
+</head>
+<body>
+
+<p>Clicks: <span id="score">0</span></p>
+<img src="Click.png" height="64px" width="64px" onclick="addtoScore(1)">
+
+<script>
+    var score = 0;
+
+    function addtoScore(amount) {
+        score = score + amount;
+        document.getElementId("score").innerhtml = score;
+    }
+</script>
+
+</body>
+</html>
