@@ -74,10 +74,10 @@ window.setInterval(function(){
 var goldenautoclicker = 0;
 
 function buyGoldenAutoClicker(){
-    var autoclickerCost= Math.floor(50 * Math.pow(1.5,goldenautoclicker));        
+    var goldenautoclickerCost= Math.floor(50 * Math.pow(1.5,goldenautoclicker));        
     if(prestigepoint >= goldenautoclickerCost){                                                                  
         goldenautoclicker = goldenautoclicker + 1;                                                                       
-        prestigepoint = prestigepoint - autoclickerCost,                                                         
+        prestigepoint = prestigepoint - goldenautoclickerCost,                                                         
         document.getElementById('goldenautoclicker').innerHTML = goldenautoclicker;    
         document.getElementById('prestigepoint').innerHTML = prestigepoint;            
     };
