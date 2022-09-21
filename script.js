@@ -62,7 +62,7 @@ function gonnaPrestige(){
         document.getElementById('click').innerHTML = click;            
     };
     var nextCost = Math.floor(1000 * Math.pow(10,prestige));       
-    document.getElementById('prestige').innerHTML = nextCost;
+    document.getElementById('prestigeCost').innerHTML = nextCost;
 };
 
 window.setInterval(function(){
