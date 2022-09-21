@@ -29,42 +29,18 @@ AutoClicker II: <span id="autoclickerII">0</span> (Gives 5click/s)
 AutoClicker II Cost: <span id="autoclickerIICost">150</span> 
 <br />
 <br />
-<button onclick="prestige">Prestige!</button>
+<h3 text-align:"center">PrestigePoints: <span id="prestigepoint">0</span></h3>
 <br />
 <br />
-To Prestige you must earn 1000 Clicks.
+<button onclick="prestige" text-align:"center">Prestige!</button>
 <br />
 <br />
-Prestige Points earned on prestige: <span id="prestigepointEarn">0</span>
-<h3>PrestigePoints: <span id="prestigepoint">0</span></h3>
+<p text-align:"center">To Prestige you must earn 1000 Clicks.</p>
 <br />
 <br />
-<button onclick="download">Import</button>
+<p text-align:"center">Prestige Points earned on prestige: <span id="prestigepointEarn">0</span></p>
 <script type="text/javascript" src="script.js"></script>
 <script type="text/javascript" src="save.js"></script>
 
-<script>
-function download(filename, text) {
-  var element = document.createElement('a');
-  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
-  element.setAttribute('download', filename);
-
-  element.style.display = 'none';
-  document.body.appendChild(element);
-
-  element.click();
-
-  document.body.removeChild(element);
-}
-form * {
-  display: block;
-  margin: 10px;
-}
-<form onsubmit="download(this['save'].value, this['text'].value)">
-  <input type="text" name="name" value="save.txt">
-  <textarea name="text"></textarea>
-  <input type="submit" value="Download">
-</form>
-</script>
 </body>
 </html>
