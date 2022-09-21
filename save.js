@@ -1,3 +1,9 @@
+var gameData = {
+  click: 0,
+  autoclick: 0,
+  autoclickII: 0,
+  
+}
 var savegame = JSON.parse(localStorage.getItem("Clicker GameSave"))
 if (savegame !== null) {
   gameData = savegame
