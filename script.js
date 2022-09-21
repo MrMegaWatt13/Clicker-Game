@@ -23,7 +23,7 @@ window.setInterval(function(){
     
     clicksClick(autoclicker);
     
-}, 10);
+}, 1000);
 
 var autoclickerII = 0;
 
@@ -70,3 +70,23 @@ window.setInterval(function(){
     prestigepointClick(prestige);
     
 }, 1000);
+
+var goldenautoclicker = 0;
+
+function buyGoldenAutoClicker(){
+    var autoclickerCost= Math.floor(50 * Math.pow(1.5,goldenautoclicker));        
+    if(prestigepoint >= goldenautoclickerCost){                                                                  
+        goldenautoclicker = goldenautoclicker + 1;                                                                       
+        prestigepoint = prestigepoint - autoclickerCost,                                                         
+        document.getElementById('goldenautoclicker').innerHTML = goldenautoclicker;    
+        document.getElementById('prestigepoint').innerHTML = prestigepoint;            
+    };
+    var nextCost = Math.floor(50 * Math.pow(1.5,goldenautoclicker));       
+    document.getElementById('goldenautoclickerCost').innerHTML = nextCost;
+};
+
+window.setInterval(function(){
+    
+    clicksClick(goldenautoclicker);
+    
+}, 20);
