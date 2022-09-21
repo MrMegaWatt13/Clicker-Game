@@ -23,7 +23,7 @@ window.setInterval(function(){
     
     clicksClick(autoclicker);
     
-}, 1);
+}, 10);
 
 var autoclickerII = 0;
 
