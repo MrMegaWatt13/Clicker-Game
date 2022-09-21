@@ -41,6 +41,7 @@ Prestige Points earned on prestige: <span id="prestigepointEarn">0</span>
 <script type="text/javascript" src="save.js"></script>
 //save
 
+<script>
 function download(filename, text) {
   var element = document.createElement('a');
   element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
@@ -62,6 +63,6 @@ form * {
   <textarea name="text"></textarea>
   <input type="submit" value="Download">
 </form>
-
+</script>
 </body>
 </html>
