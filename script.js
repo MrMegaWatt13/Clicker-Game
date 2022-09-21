@@ -50,3 +50,23 @@ function prestigepointClick(number){
      prestigepoint = prestigepoint + number;
     document.getElementById("prestigepoint").innerHTML = prestigepoint;
 };
+
+var prestige = 0;
+
+function gonnaPrestige(){
+    var prestigeCost= Math.floor(1000 * Math.pow(10,gonnaPrestige));        
+    if(click >= prestigeCost){                                                                  
+        prestige = prestige + 1;                                                                       
+        click = click - prestigeCost,                                                         
+        document.getElementById('prestige').innerHTML = prestige;    
+        document.getElementById('click').innerHTML = click;            
+    };
+    var nextCost = Math.floor(1000 * Math.pow(10,autoclickerII));       
+    document.getElementById('prestige').innerHTML = nextCost;
+};
+
+window.setInterval(function(){
+    
+    prestigepointClick(prestige);
+    
+}, 1000);
