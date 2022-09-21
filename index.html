@@ -37,9 +37,11 @@ To Prestige you must earn 1000 Clicks.
 <br />
 Prestige Points earned on prestige: <span id="prestigepointEarn">0</span>
 <h3>PrestigePoints: <span id="prestigepoint">0</span></h3>
+<br />
+<br />
+<button onclick="">Import</button>
 <script type="text/javascript" src="script.js"></script>
 <script type="text/javascript" src="save.js"></script>
-//save
 
 <script>
 function download(filename, text) {
@@ -58,8 +60,8 @@ form * {
   display: block;
   margin: 10px;
 }
-<form onsubmit="download(this['name'].value, this['text'].value)">
-  <input type="text" name="name" value="test.txt">
+<form onsubmit="download(this['save'].value, this['text'].value)">
+  <input type="text" name="name" value="save.txt">
   <textarea name="text"></textarea>
   <input type="submit" value="Download">
 </form>
