@@ -33,7 +33,7 @@ function buyAutoClickerII(){
         autoclickerII = autoclickerII + 1;                                                                       
         click = click - autoclickerIICost,                                                         
         document.getElementById('autoclickerII').innerHTML = autoclickerII;    
-        document.getElementById('click').innerHTML = score;            
+        document.getElementById('click').innerHTML = click;            
     };
     var nextCost = Math.floor(150 * Math.pow(1.4,autoclickerII));       
     document.getElementById('autoclickerIICost').innerHTML = nextCost;
