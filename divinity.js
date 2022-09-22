@@ -1,6 +1,6 @@
 var divinityPoint = 0
 function divinityClick(number){
-     divinityPoint = devinityPoint + number;
+     divinityPoint = divinityPoint + number;
     document.getElementById("divinityPoint").innerHTML = divinityPoint;
 };
 
