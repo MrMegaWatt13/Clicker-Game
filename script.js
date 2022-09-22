@@ -44,3 +44,10 @@ window.setInterval(function(){
     clicksClick(autoclickerII);
     
 }, 333);
+
+var sunburst;
+document.getElementById('sunburst').innerHTML = sunburst;
+
+function pm1(){
+    Sunburst.play()
+}
