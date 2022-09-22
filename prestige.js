@@ -12,11 +12,11 @@ function gonnaPrestige(){
         prestige = prestige + 1;                                                                       
         click = click - prestigeCost,                                                      
         document.getElementById('prestige').innerHTML = prestige;    
-        document.getElementById('click').innerHTML = click;            
+        document.getElementById('click').innerHTML = click;   
+        ResetPrestige();         
     };
     var nextCost = Math.floor(1000 * Math.pow(1.34,prestige));       
     document.getElementById('prestigeCost').innerHTML = nextCost;
-    ResetPrestige();
 };
 
 window.setInterval(function(){
