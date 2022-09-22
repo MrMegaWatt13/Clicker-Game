@@ -1,6 +1,6 @@
 document.getElementById("soundTag").innerHTML = "<audio controls volume preload='none' src='Sunburst.mp3'></audio>";
 
-/*$('#button_play').on('click', function() {
+$('#button_play').on('click', function() {
 
 	$("audio")[0].play();
   
@@ -13,4 +13,4 @@ $('#button_pause').on('click', function() {
   
   $('#button_play').show();
   $('#button_pause').hide();
-});*/
+});
