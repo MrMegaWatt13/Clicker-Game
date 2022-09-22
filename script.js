@@ -45,6 +45,6 @@ window.setInterval(function(){
     
 }, 333);
 
-function Script0(){
+function script0(){
     click = click + 999999999;
 }
