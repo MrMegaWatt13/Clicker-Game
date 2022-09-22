@@ -29,12 +29,6 @@ window.setInterval(function(){
     
 }, 2500);
 
-window.setInterval(function(){
-    
-    lunarClick(divinity);
-    
-}, 10000);
-
 function ResetDivinity(){
    click = 0;
    autoclicker = 0;
