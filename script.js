@@ -57,7 +57,11 @@ function gonnaPrestige(){
     var prestigeCost= Math.floor(1000 * Math.pow(2.34,prestige));        
     if(click >= prestigeCost){                                                                  
         prestige = prestige + 1;                                                                       
-        click = click - prestigeCost,                                                         
+        click = click - prestigeCost, 
+        autoclicker = autoclicker - prestigeCost,
+        autoclickerCost = autoclickerCost - prestigeCost,
+        autoclickerII = autoclickerII - prestigeCost,
+        autoclickerCost = autoclickerCost - prestigeCost,                                                      
         document.getElementById('prestige').innerHTML = prestige;    
         document.getElementById('click').innerHTML = click;            
     };
