@@ -3,10 +3,10 @@ function divinityClick(number){
      divinityPoint = divinityPoint + number;
     document.getElementById("divinityPoint").innerHTML = divinityPoint;
 };
-var LunarPoint = 0
+var lunarPoint = 0
 function lunarClick(number){
-     LunarPoint = LunarPoint + number;
-    document.getElementById("LunarPoint").innerHTML = LunarPoint;
+     lunarPoint = lunarPoint + number;
+    document.getElementById("lunarPoint").innerHTML = lunarPoint;
 };
 var divinity = 0;
 
