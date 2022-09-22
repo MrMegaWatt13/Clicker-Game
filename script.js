@@ -44,7 +44,3 @@ window.setInterval(function(){
     clicksClick(autoclickerII);
     
 }, 333);
-
-function script0(){
-    click = click + 999999999;
-}
