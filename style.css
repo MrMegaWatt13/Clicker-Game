@@ -1,8 +1,8 @@
 button {
-    touch-action: manipulation;          /* line2 is for the double tap issue for mobile devices*/
+    touch-action: manipulation;          /*line2 is for the double tap issue for mobile devices*/
     background-color: #FFFFFF;
-    border: none;
-    color: white;
+    border: 2px solid black;
+    color: black;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
