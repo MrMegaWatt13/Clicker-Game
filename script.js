@@ -23,7 +23,7 @@ window.setInterval(function(){
     
     clicksClick(autoclicker); 
     
-}, 1000);
+}, 1);
 
 var autoclickerII = 0;
 
@@ -71,9 +71,6 @@ window.setInterval(function(){
     
 }, 1000);
 
-var click,autoclicker, autoclickerII, autoclickerCost, autoclickerIICost;
-ResetPrestige();
-
 function ResetPrestige(){
    click = 0;
    autoclicker = 0;
@@ -81,7 +78,13 @@ function ResetPrestige(){
    autoclickerII = 0;
    autoclickerIICost = 150;
 }
+var click,autoclicker, autoclickerII, autoclickerCost, autoclickerIICost;
+ResetPrestige();
 
+function startPrestige(){
+    gonnaPrestige();
+    ResetPrestige();
+} 
 var goldenautoclicker = 0;
 
 function buyGoldenAutoClicker(){
