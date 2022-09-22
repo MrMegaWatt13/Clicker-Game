@@ -7,14 +7,14 @@ function divinityClick(number){
 var divinity = 0;
 
 function gonnaDivinity(){
-    var divinityCost= Math.floor(10 * Math.pow(1.1,divinity));        
+    var divinityCost= Math.floor(5 * Math.pow(1.2,divinity));        
     if(prestige >= divinityCost){                                                                  
         divinity = divinity + 1;                                                                       
         prestige = prestige - divintiyCost,                                                      
         document.getElementById('divinity').innerHTML = divinity;    
         document.getElementById('prestige').innerHTML = prestige;            
     };
-    var nextCost = Math.floor(10 * Math.pow(1.1,divinity));       
+    var nextCost = Math.floor(5 * Math.pow(1.2,divinity));       
     document.getElementById('divinityCost').innerHTML = nextCost;
 };
 
