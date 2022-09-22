@@ -7,6 +7,6 @@ button {
     font-size: 16px;
     cursor: pointer;
 }
-@font-face {
+font-face {
   font-family: Arial, Helvetica, sans-serif;
 }
