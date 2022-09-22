@@ -45,9 +45,9 @@ window.setInterval(function(){
     
 }, 333);
 
-var sunburst;
-document.getElementById('sunburst').innerHTML = sunburst;
+var Sunburst;
 
 function pm1(){
-    sunburst.play()
+    Sunburst.play();
+document.getElementById('Sunburst').innerHTML = sunburst;
 }
