@@ -3,19 +3,24 @@ function divinityClick(number){
      divinityPoint = divinityPoint + number;
     document.getElementById("divinityPoint").innerHTML = divinityPoint;
 };
-
+var LunarPoint = 0
+function lunarClick(number){
+     LunarPoint = LunarPoint + number;
+    document.getElementById("LunarPoint").innerHTML = LunarPoint;
+};
 var divinity = 0;
 
 function gonnaDivinity(){
     var divinityCost= Math.floor(5 * Math.pow(1.2,divinity));        
     if(prestige >= divinityCost){                                                                  
         divinity = divinity + 1;                                                                       
-        prestige = prestige - divintiyCost,                                                      
+        prestige = prestige - divinitiyCost,                                                      
         document.getElementById('divinity').innerHTML = divinity;    
         document.getElementById('prestige').innerHTML = prestige;            
     };
     var nextCost = Math.floor(5 * Math.pow(1.2,divinity));       
     document.getElementById('divinityCost').innerHTML = nextCost;
+    ResetDivinity();
 };
 
 window.setInterval(function(){
@@ -23,6 +28,13 @@ window.setInterval(function(){
     divinityClick(divinity);
     
 }, 2500);
+};
+
+window.setInterval(function(){
+    
+    lunarClick(divinity);
+    
+}, 10000);
 
 function ResetDivinity(){
    click = 0;
@@ -38,8 +50,3 @@ function ResetDivinity(){
 }
 var click,autoclicker, autoclickerII, autoclickerCost, autoclickerIICost, goldenautoclicker, goldenautoclickerCost, prestigepoint, prestige, prestigeCost;
 ResetDivinity();
-
-function startDivinity(){
-    gonnaDivinity();
-    ResetDivinity();
-} 
