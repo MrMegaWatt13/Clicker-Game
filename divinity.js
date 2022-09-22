@@ -8,6 +8,7 @@ function lunarClick(number){
      lunarPoint = lunarPoint + number;
     document.getElementById("lunarPoint").innerHTML = lunarPoint;
 };
+
 var divinity = 0;
 
 function gonnaDivinity(){
@@ -16,11 +17,11 @@ function gonnaDivinity(){
         divinity = divinity + 1;                                                                       
         prestige = prestige - divinitiyCost,                                                      
         document.getElementById('divinity').innerHTML = divinity;    
-        document.getElementById('prestige').innerHTML = prestige;            
+        document.getElementById('prestige').innerHTML = prestige;
+        ResetDivinity();            
     };
     var nextCost = Math.floor(5 * Math.pow(1.2,divinity));       
     document.getElementById('divinityCost').innerHTML = nextCost;
-    ResetDivinity();
 };
 
 window.setInterval(function(){
