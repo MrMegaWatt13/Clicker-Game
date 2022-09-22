@@ -48,7 +48,7 @@
 <br />
 <br />
 <h3>Settings</h3>
-<button id="PlaySunburst" onclick="Sunburst()">Music (Sunburst)</button>
+<button onclick="Sunburst()">Music (Sunburst)</button>
 <p>Added This Bcs No Music lol Under Is The Music</p>
 <p> Song: Tobu & Itro - Sunburst [NCS Release]
 Music provided by NoCopyrightSounds
@@ -59,14 +59,13 @@ Watch: http://youtu.be/4lXBHD5C8do</p>
 <script type="text/javascript" src="divinity.js"></script>
 
 <audio id="Sunburst">
-    <source src="Sunburst.mp3" type="audio/mp3"
+    <source src="Sunburst.mp3" type="audio/mp3">
 </audio>
 
 <script>
     var Sunburst = document.getElementId("Sunburst");
-    var PlaySunburst = document.getElementId("PlaySunburst");
 
-    PlaySunburst.onclick = function X(){
+    function X(){
                 Sunburst.play();
 }
 
