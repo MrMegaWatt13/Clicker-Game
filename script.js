@@ -49,5 +49,5 @@ var sunburst;
 document.getElementById('sunburst').innerHTML = sunburst;
 
 function pm1(){
-    Sunburst.play()
+    sunburst.play()
 }
