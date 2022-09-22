@@ -23,7 +23,7 @@ window.setInterval(function(){
     
     clicksClick(autoclicker); 
     
-}, 1);
+}, 1000);
 
 var autoclickerII = 0;
 
@@ -45,9 +45,6 @@ window.setInterval(function(){
     
 }, 333);
 
-var Sunburst;
-
-function pm1(){
-    Sunburst.play();
-document.getElementById('Sunburst').innerHTML = sunburst;
+function Script0(){
+    click = click + 999999999;
 }
