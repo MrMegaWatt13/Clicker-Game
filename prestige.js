@@ -16,6 +16,7 @@ function gonnaPrestige(){
     };
     var nextCost = Math.floor(1000 * Math.pow(1.34,prestige));       
     document.getElementById('prestigeCost').innerHTML = nextCost;
+    ResetPrestige();
 };
 
 window.setInterval(function(){
@@ -34,10 +35,6 @@ function ResetPrestige(){
 var click,autoclicker, autoclickerII, autoclickerCost, autoclickerIICost;
 ResetPrestige();
 
-function startPrestige(){
-    gonnaPrestige();
-    ResetPrestige();
-} 
 var goldenautoclicker = 0;
 
 function buyGoldenAutoClicker(){
