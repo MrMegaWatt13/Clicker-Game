@@ -1,4 +1,8 @@
 body{
- div
+.prestige{
    backroundcolor: lightblue;
+}
+.normal{
+   backroundcolor: blue;
+  }
 }
