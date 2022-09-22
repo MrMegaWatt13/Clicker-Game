@@ -1,13 +1,13 @@
 button {
-    touch-action: manipulation;             /*this is for the double tap issue for mobile devices*/
-    border: 1px outset black;
-    background-color: white;
-    height:50px;
-    width:250px;
-    cursor:pointer;
-}
-
-button:hover {
-   background-color: white;
-   color:white;
+    touch-action: manipulation;          /* line2 is for the double tap issue for mobile devices*/
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
