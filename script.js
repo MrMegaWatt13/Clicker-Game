@@ -21,7 +21,7 @@ function buyAutoClicker(){
 
 window.setInterval(function(){
     
-    clicksClick(autoclicker);
+    clicksClick(autoclicker); 
     
 }, 1000);
 
