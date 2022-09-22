@@ -15,7 +15,7 @@ function gonnaDivinity(){
     var divinityCost= Math.floor(5 * Math.pow(1.2,divinity));        
     if(prestige >= divinityCost){                                                                  
         divinity = divinity + 1;                                                                       
-        prestige = prestige - divinitiyCost,                                                      
+        prestige = prestige - divinityCost,                                                      
         document.getElementById('divinity').innerHTML = divinity;    
         document.getElementById('prestige').innerHTML = prestige;
         ResetDivinity();            
