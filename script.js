@@ -57,11 +57,7 @@ function gonnaPrestige(){
     var prestigeCost= Math.floor(1000 * Math.pow(2.34,prestige));        
     if(click >= prestigeCost){                                                                  
         prestige = prestige + 1;                                                                       
-        click = click - prestigeCost, 
-        autoclicker = autoclicker - prestigeCost,
-        autoclickerCost = autoclickerCost - prestigeCost,
-        autoclickerII = autoclickerII - prestigeCost,
-        autoclickerCost = autoclickerCost - prestigeCost,                                                      
+        click = click - prestigeCost,                                                      
         document.getElementById('prestige').innerHTML = prestige;    
         document.getElementById('click').innerHTML = click;            
     };
@@ -74,6 +70,17 @@ window.setInterval(function(){
     prestigepointClick(prestige);
     
 }, 1000);
+
+var click,autoclicker, autoclickerII, autoclickerCost, autoclickerIICost;
+ResetPrestige();
+
+function ResetPrestige(){
+   click = 0;
+   autoclicker = 0;
+   autoclickerCost = 10;
+   autoclickerII = 0;
+   autoclickerIICost = 150;
+}
 
 var goldenautoclicker = 0;
 
