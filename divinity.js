@@ -28,7 +28,6 @@ window.setInterval(function(){
     divinityClick(divinity);
     
 }, 2500);
-};
 
 window.setInterval(function(){
     
