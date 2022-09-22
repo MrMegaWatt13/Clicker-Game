@@ -7,7 +7,7 @@ function prestigepointClick(number){
 var prestige = 0;
 
 function gonnaPrestige(){
-    var prestigeCost= Math.floor(1000 * Math.pow(2.34,prestige));        
+    var prestigeCost= Math.floor(1000 * Math.pow(1.34,prestige));        
     if(click >= prestigeCost){                                                                  
         prestige = prestige + 1;                                                                       
         click = click - prestigeCost,                                                      
