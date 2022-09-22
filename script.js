@@ -146,7 +146,7 @@ function ResetDivinity(){
 var click,autoclicker, autoclickerII, autoclickerCost, autoclickerIICost, goldenautoclicker, goldenautoclickerCost, prestigepoint, prestige, prestigeCost;
 ResetDivinity();
 
-function startPrestige(){
+function startDivinity(){
     gonnaDivinity();
     ResetDivinity();
 } 
