@@ -13,3 +13,31 @@ h3 {
 p {
   font-family: arial, sans-serif;
 }
+
+.PButton {
+    touch-action: manipulation;          
+    border: 3px solid black;
+    background-color: lightblue;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.DButton {
+    touch-action: manipulation;          
+    border: 3px solid black;
+    background-color: pink;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.LButton {
+    touch-action: manipulation;          
+    border: 3px solid black;
+    background-color: #A020F0;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
