@@ -1,6 +1,6 @@
 button {
     touch-action: manipulation;          /*line2 is for the double tap issue for mobile devices*/
-    border: 3px solid #808080;
+    border: none;
     background-color: #b3b3b3; 
     color: black;
     padding: 14px 28px;
@@ -15,7 +15,7 @@ p {
 }
 .PButton {
     touch-action: manipulation;           
-    border: 3px solid #b3ffff;
+    border: none;
     background-color: #66ffff;
     color: black;
     padding: 14px 28px;
@@ -24,7 +24,7 @@ p {
 }
 .DButton {
     touch-action: manipulation;          
-    border: 3px solid #ffb3df;
+    border: none;
     background-color: #ff00ff;
     color: black;
     padding: 14px 28px;
@@ -33,7 +33,7 @@ p {
 }
 .LButton {
     touch-action: manipulation;          
-    border: 3px solid #c61aff;
+    border: none;
     background-color: #e0b3ff;
     color: black;
     padding: 14px 28px;
