@@ -38,3 +38,9 @@ function buyAutoClickerII(){
     var nextCost = Math.floor(150 * Math.pow(1.15,autoclickerII));       
     document.getElementById('autoclickerIICost').innerHTML = nextCost;
 };
+
+window.setInterval(function(){
+    
+    clicksClick(autoclickerII); 
+    
+}, 333);
