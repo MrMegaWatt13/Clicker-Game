@@ -87,7 +87,26 @@ function saveGame() {
         divinityCost: divinityCost
      };
      localStorage.setItem("gameSave", JSON.stringify(gameSave)); 
-}     
-setInterval function() {
+} 
+
+window.onload = function(){ 
+    loadGame();
+    document.getElementById('click').innerHTML = click;    
+    document.getElementById('prestigePoint').innerHTML = prestigePoint;
+    document.getElementById('divinityPoint').innerHTML = divinityPoint;    
+    document.getElementById('lunarPoint').innerHTML = lunarPoint;
+    document.getElementById('autoclicker').innerHTML = autoclicker;    
+    document.getElementById('autoclickerCost').innerHTML = autoclickerCost;
+    document.getElementById('autoclickerII').innerHTML = autoclickerII;    
+    document.getElementById('autoclickerIICost').innerHTML = autoclickerIICost;
+    document.getElementById('goldenautoclicker').innerHTML = goldenautoclicker;    
+    document.getElementById('goldenautoclickerCost').innerHTML = goldenautoclickerCost;
+    document.getElementById('prestige').innerHTML = prestige;    
+    document.getElementById('prestigeCost').innerHTML = prestigeCost;
+    document.getElementById('divinity').innerHTML = divinity;    
+    document.getElementById('divinityCost').innerHTML = divinityCost;
+};
+
+setInterval(function() {
     saveGame();
 }, 100);   
