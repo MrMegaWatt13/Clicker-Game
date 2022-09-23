@@ -45,6 +45,6 @@ window.setInterval(function(){
     
 }, 333);
 
-setTimeout(function(){
+/*setTimeout(function(){
    window.location.reload(1);
-}, 1000);
+}, 1000);*/
