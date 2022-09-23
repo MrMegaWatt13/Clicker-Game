@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0"/>
 </head>
 <body>
-<h3>Clicks: <span id="click">0</span> (Clicks Per Second: <span id="cps">0</span>)</h3>
+<h3>Clicks: <span id="click">0</span></h3>
 <button style="font-size:10px;" onclick="clicksClick(1)">-</button>                                            
 <br />
 <br />
@@ -29,7 +29,9 @@
 <br />
 <p>Prestiges done: <span id="prestige">0</span></p>
 <br />
-<p>To Prestige you must earn <span id="prestigeCost">1000</span> Clicks.</p>
+<p>To Prestige you must gain <span id="prestigeCost">1000</span> Clicks.</p>
+<br />
+<p>Prestige Resets: Clicks,AutoClicker,AutoclickerII.</p>
 <br />
 <button type="PButton" class="PButton" onclick="buyGoldenAutoClicker()">Buy Golden AutoClicker</button>
 <br />
@@ -42,7 +44,33 @@
 <br />
 <p>Divinities Done: <span id="divinity">0</span></p>
 <br />
-<p>To Divinity you must earn <span id="divinityCost">5</span> Prestige.
+<p>To Divinity you must Prestige <span id="divinityCost">5</span> times.</p>
+<br />
+<p>Divinity Resets: Clicks,PrestigePoint,AutoClicker,AutoclickerII,Prestige,GoldenAutoClicker.</p>
+<br />
+<br />
+<h3>Dark Matter: <span id="darkmatterPoint">0</span></h3>
+<button type="VButton" class="VButton" onclick="gonnaVortex()">Go Vortex</button>
+<br />
+<h3>Vortex: <span id="vortex">0</span></h3>
+<br />
+<p>To Vortex you must gain <span id="vortexCost">1000</span> Lunar.</p>
+<br />
+<p>Vortex Resets: Clicks,PrestigePoint,Divinity,Lunar,AutoClicker,AutoclickerII,Prestiges Done,Divinities Done,GoldenAutoClicker,Divinity Clicker,Divine Prestige,Lunar C,Lunar P,Lunar D.</p>
+<br />
+<br />
+<h3>Vortex Milestones:</h3>
+<br />
+<h3>Milestone 1</h3>
+<br />
+<p>Dark Clicker (Gives 100clicks/s)
+<br />
+<p>This effect starts at Vortex Milestone 1 and adds by 1 per vortex milestone.</p>
+<br />
+<p>Effect: <span id="VME1">null</span>
+<br />
+<br />
+<h3>Placeholder</h3>
 <br />
 <br />
 <br />
@@ -74,6 +102,7 @@
 <button onclick="clicksClick(999999999)">Script 0</button>
 <button onclick="saveGame">Save</button>
 <button onclick="loadGame">Load</button>
+
 <script type="text/javascript" src="script.js"></script>
 <script type="text/javascript" src="prestige.js"></script>
 <script type="text/javascript" src="divinity.js"></script>
