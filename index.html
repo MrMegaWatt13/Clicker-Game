@@ -48,11 +48,35 @@
 <br />
 <p>Divinity Resets: Clicks,PrestigePoint,AutoClicker,AutoclickerII,Prestige,GoldenAutoClicker.</p>
 <br />
+<button type="LButton" class="LButton" onclick="buyLunarC()">Lunar C</button>
+<br />
+<p>Lunar C: <span id="lunarC">0</span> (Gives 10click/s)</p>
+<br />
+<p>Lunar C Cost: <span id="lunarCCost">1</span> Lunar</p>
+<br />
+<p>Upgrade Does Not Increase In Price
+<br />
+<button type="LButton" class="LButton" onclick="buyLunarP()">Lunar P</button>
+<br />
+<p>Lunar P: <span id="lunarP">0</span> (Gives 1prestigepoint/s)</p>
+<br />
+<p>Lunar P Cost: <span id="lunarPCost">3</span> Lunar</p>
+<br />
+<p>Upgrade Does Not Increase In Price
+<br />
+<button type="LButton" class="LButton" onclick="buyLunarD()">Lunar D</button>
+<br />
+<p>Lunar D: <span id="lunarD">0</span> (Gives 0.1Divinity/s)</p>
+<br />
+<p>Lunar D Cost: <span id="lunarDCost">5</span> Lunar</p>
+<br />
+<p>Upgrade Does Not Increase In Price
+<br />
 <br />
 <h3>Dark Matter: <span id="darkmatterPoint">0</span></h3>
 <button type="VButton" class="VButton" onclick="gonnaVortex()">Go Vortex</button>
 <br />
-<h3>Vortex: <span id="vortex">0</span></h3>
+<p>Vortex: <span id="vortex">0</span></p>
 <br />
 <p>To Vortex you must gain <span id="vortexCost">1000</span> Lunar.</p>
 <br />
@@ -104,8 +128,6 @@
 <button onclick="loadGame">Load</button>
 
 <script type="text/javascript" src="script.js"></script>
-<script type="text/javascript" src="prestige.js"></script>
-<script type="text/javascript" src="divinity.js"></script>
 
 </body>
 </html>
