@@ -64,7 +64,8 @@ function update() {
 }
 
 window.onclick = function(){
-    if(!started)
+    if(!started) {
     started = true;
     return;
+    }
 }
