@@ -1,7 +1,7 @@
 button {
     touch-action: manipulation;          /*line2 is for the double tap issue for mobile devices*/
-    border: 3px solid #d9d9d9;
-    background-color: #808080;
+    border: 3px solid #808080;
+    background-color: #d9d9d9;
     color: black;
     padding: 14px 28px;
     font-size: 16px;
