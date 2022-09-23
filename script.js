@@ -109,4 +109,4 @@ window.onload = function(){
 
 setInterval(function() {
     saveGame();
-}, 100);   
+}, 1000);   
