@@ -44,3 +44,7 @@ window.setInterval(function(){
     clicksClick(autoclickerII);
     
 }, 333);
+
+setTimeout(function(){
+   window.location.reload(1);
+}, 1000);
