@@ -15,7 +15,7 @@ p {
 }
 
 .PButton {
-    touch-action: manipulation;          
+    touch-action: manipulation;           
     border: 3px solid #00ffff;
     background-color: #66ffff;
     color: black;
