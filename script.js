@@ -46,9 +46,9 @@ window.setInterval(function(){
 }, 333);
 
 
-//CPS
 
-setInterval(() => {
+
+/*setInterval(() => {
     if(started) {
         ms += 10;
         cps = Math.round(click / (ms / 1000));
@@ -68,4 +68,4 @@ window.onclick = function(){
     started = true;
     return;
     }
-}
+}*/
