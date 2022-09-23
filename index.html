@@ -74,67 +74,6 @@
 <button onclick="clicksClick(999999999)">Script 0</button>
 <button onclick="saveGame">Save</button>
 <button onclick="loadGame">Load</button>
-<script>
-/*function loadGame() {
-    var savedGame = JSON.parse(localStorage.getItem("gameSave"));
-    if (typeof savedGame.click !== "undefined") click = savedGame.click;
-    if (typeof savedGame.prestigePoint !== "undefined") prestigePoint = savedGame.prestigePoint;
-    if (typeof savedGame.divinityPoint !== "undefined") divinityPoint = savedGame.divinityPoint;
-    if (typeof savedGame.lunarPoint !== "undefined") lunarPoint = savedGame.lunarPoint;
-    if (typeof savedGame.autoclicker !== "undefined") autoclicker = savedGame.autoclicker;
-    if (typeof savedGame.autoclickerCost !== "undefined") autoclickerCost = savedGame.autoclickerCost;
-    if (typeof savedGame.autoclickerII !== "undefined") autoclickerII = savedGame.autoclickerII;
-    if (typeof savedGame.autoclickerIICost !== "undefined") autoclickerIICost = savedGame.autoclickerIICost;
-    if (typeof savedGame.goldenautoclicker !== "undefined") goldenautoclicker = savedGame.goldenautoclicker;
-    if (typeof savedGame.goldenautoclickerCost !== "undefined") goldenautoclickerCost = savedGame.goldenautoclickerCost;
-    if (typeof savedGame.prestige !== "undefined") prestige = savedGame.prestige;
-    if (typeof savedGame.prestigeCost !== "undefined") prestigeCost = savedGame.prestigeCost;
-    if (typeof savedGame.divinity !== "undefined") divinity = savedGame.divinity;
-    if (typeof savedGame.divinityCost !== "undefined") divinityCost = savedGame.divinityCost;   
-}
-
-function saveGame(){
-    var gameSave = {
-        click: click,
-        prestigePoint: prestigePoint,
-        divinityPoint: divinityPoint,
-        lunarPoint: lunarPoint,
-        autoclicker: autoclicker,
-        autoclickerCost: autoclickerCost,
-        autoclickerII: autoclickerII,
-        autoclickerCostII: autoclickerCostII, 
-        goldenautoclicker: goldenautoclicker,
-        goldenautoclickerCost: goldenautoclickerCost, 
-        prestige: prestige,
-        prestigeCost: prestigeCost,
-        divinity: divinity,
-        divinityCost: divinityCost
-     };
-     localStorage.setItem("gameSave", JSON.stringify(gameSave)); 
-} 
-
-window.onload = function(){ 
-    loadGame();
-    document.getElementById('click').innerHTML = click;    
-    document.getElementById('prestigePoint').innerHTML = prestigePoint;
-    document.getElementById('divinityPoint').innerHTML = divinityPoint;    
-    document.getElementById('lunarPoint').innerHTML = lunarPoint;
-    document.getElementById('autoclicker').innerHTML = autoclicker;    
-    document.getElementById('autoclickerCost').innerHTML = autoclickerCost;
-    document.getElementById('autoclickerII').innerHTML = autoclickerII;    
-    document.getElementById('autoclickerIICost').innerHTML = autoclickerIICost;
-    document.getElementById('goldenautoclicker').innerHTML = goldenautoclicker;    
-    document.getElementById('goldenautoclickerCost').innerHTML = goldenautoclickerCost;
-    document.getElementById('prestige').innerHTML = prestige;    
-    document.getElementById('prestigeCost').innerHTML = prestigeCost;
-    document.getElementById('divinity').innerHTML = divinity;    
-    document.getElementById('divinityCost').innerHTML = divinityCost;
-};
-
-setInterval(function(){
-    saveGame();
-}, 1000);*/ 
-</script>
 <script type="text/javascript" src="script.js"></script>
 <script type="text/javascript" src="prestige.js"></script>
 <script type="text/javascript" src="divinity.js"></script>
