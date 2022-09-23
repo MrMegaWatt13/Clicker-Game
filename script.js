@@ -46,7 +46,8 @@ window.setInterval(function(){
 }, 333);
 
 
-//PRESTIGE
+//PRESTIGE----------------------------------------------------------------------------------
+
 
 var prestigepoint = 0
 function prestigepointClick(number){
@@ -106,7 +107,8 @@ window.setInterval(function(){
 }, 100);
 
 
-//DIVINITY & LUNAR
+//DIVINITY & LUNAR----------------------------------------------------------------------------------
+
 
 var divinityPoint = 0
 function divinityClick(number){
@@ -155,7 +157,8 @@ function ResetDivinity(){
 var click,autoclicker, autoclickerII, autoclickerCost, autoclickerIICost, goldenautoclicker, goldenautoclickerCost, prestigepoint, prestige, prestigeCost;
 ResetDivinity();
 
-//VORTEX
+
+//VORTEX----------------------------------------------------------------------------------
 
 
-//end
+//end----------------------------------------------------------------------------------
