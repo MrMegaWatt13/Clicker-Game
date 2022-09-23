@@ -46,26 +46,13 @@ window.setInterval(function(){
 }, 333);
 
 
+//PRESTIGE
 
 
-/*setInterval(() => {
-    if(started) {
-        ms += 10;
-        cps = Math.round(click / (ms / 1000));
-        update();
-}, 10)
+//DIVINITY & LUNAR
 
-var cps = 0;
-var ms = 0;
-var started = false;
 
-function update() {
-    document.getElementById("cps").innerhtml = "Your cps:" "+cps;
-}
+//VORTEX
 
-window.onclick = function(){
-    if(!started) {
-    started = true;
-    return;
-    }
-}*/
+
+//end
