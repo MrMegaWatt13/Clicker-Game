@@ -44,3 +44,27 @@ window.setInterval(function(){
     clicksClick(autoclickerII); 
     
 }, 333);
+
+
+//CPS
+
+setInterval(() => {
+    if(started) {
+        ms += 10;
+        cps = Math.round(click / (ms / 1000));
+        update();
+}, 10)
+
+var cps = 0;
+var ms = 0;
+var started = false;
+
+function update() {
+    document.getElementById("cps").innerhtml = "Your cps:" "+cps;
+}
+
+window.onclick = function(){
+    if(!started)
+    started = true;
+    return;
+}
