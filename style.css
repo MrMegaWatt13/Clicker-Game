@@ -40,3 +40,12 @@ p {
     font-size: 16px;
     cursor: pointer;
 }
+.VButton {
+    touch-action: manipulation;          
+    border: none;
+    background-color: #000033;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
