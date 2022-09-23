@@ -1,7 +1,7 @@
 button {
     touch-action: manipulation;          /*line2 is for the double tap issue for mobile devices*/
     border: 3px solid #808080;
-    background-color: #d9d9d9; 
+    background-color: #b3b3b3; 
     color: black;
     padding: 14px 28px;
     font-size: 16px;
@@ -24,8 +24,8 @@ p {
 }
 .DButton {
     touch-action: manipulation;          
-    border: 3px solid #ff80df;
-    background-color: #ffb3ff;
+    border: 3px solid #ffb3df;
+    background-color: #ff00ff;
     color: black;
     padding: 14px 28px;
     font-size: 16px;
