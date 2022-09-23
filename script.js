@@ -69,7 +69,7 @@ function loadGame() {
     if (typeof savedGame.divinityCost !== "undefined") divinityCost = savedGame.divinityCost;   
 }
 
-function saveGame() {
+function saveGame(){
     var gameSave = {
         click: click,
         prestigePoint: prestigePoint,
@@ -107,6 +107,6 @@ window.onload = function(){
     document.getElementById('divinityCost').innerHTML = divinityCost;
 };
 
-setInterval(function() {
+setInterval(function(){
     saveGame();
 }, 1000);   
