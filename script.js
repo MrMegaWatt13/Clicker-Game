@@ -1,4 +1,4 @@
-var click = 0;
+var click = 0; 
 
 function clicksClick(number){
     click = click + number;
