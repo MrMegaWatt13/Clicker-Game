@@ -95,8 +95,8 @@ function CBE(){
     
 };
 
-StartUPCBE(1);
-StartUPCBEXP(1);
+StartUpCBE(1);
+StartUpCBEXP(1);
 
 window.setInterval(function(){
     
