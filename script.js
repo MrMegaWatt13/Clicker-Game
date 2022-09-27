@@ -45,6 +45,52 @@ window.setInterval(function(){
     
 }, 333);
 
+//ClickedButtonEffects & XP----------------------------------------------------------------------------------
+
+
+var CBEffect = 0;
+
+function StartUpCBE(number){
+    XP = XP + number;
+    document.getElementById("CBEffect").innerHTML = CBEffect;
+};
+
+var CBEffectXP = 0;
+
+function StartUpCBEXP(number){
+    XP = XP + number;
+    document.getElementById("CBEffectXP").innerHTML = CBEffectXP;
+};
+
+var XP = 0;
+
+function gainXP(number){
+    XP = XP + number;
+    document.getElementById("XP").innerHTML = XP;
+};
+
+var XPLVL = 0;
+
+function gainXPLVL(number){
+    XP = XP + number;
+    document.getElementById("XPLVL").innerHTML = XPLVL;
+};
+
+function CBE(){
+    
+    clicksClick(CBEffect);
+    gainXP(CBEffectXP);
+    
+}, 1000);
+
+startUPCBE(1);
+startUPCBEXP(1);
+
+window.setInterval(function(){
+    
+    clicksClick(XPLVL);
+    
+}, 1000);
 
 //PRESTIGE----------------------------------------------------------------------------------
 
