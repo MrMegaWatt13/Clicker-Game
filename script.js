@@ -81,8 +81,8 @@ function lvlxp(){
     if(XP >= XPREQ){
         XPLVL = XPLVL + 1;
         XP = XP - XPREQ,
-        document.getElementById('XPLVL').innerHTML = XPLVL;    
-        document.getElementById('XP').innerHTML = XP;          
+        document.getElementById('XP').innerHTML = XP;    
+        document.getElementById('XPLVL').innerHTML = XPLVL;          
     };
     var nextCost = Math.floor(50 * Math.pow(1.2,XPLVL));       
     document.getElementById('XPREQ').innerHTML = XPREQ;
@@ -126,8 +126,9 @@ window.setInterval(function(){
 
 
 var prestigepoint = 0;
+
 function prestigepointClick(number){
-     prestigepoint = prestigepoint + number;
+    prestigepoint = prestigepoint + number;
     document.getElementById("prestigepoint").innerHTML = prestigepoint;
 };
 
