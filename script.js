@@ -50,7 +50,7 @@ window.setInterval(function(){
 
 /*var cbeffect = 0;
 
-function startUpCBE(number){
+function startUpCBE(number){ 
     cbeffect = cbeffect + number;
     document.getElementById("cbeffect").innerHTML = cbeffect;
 };
