@@ -79,7 +79,7 @@ function gainXPLVL(number){
 function XPTOLVL() {
     var XPREQ= Math.floor(50 * Math.pow(1.2,XPLVL));
     if(XP >= XPREQ){
-    XP = XP - XPREQ,
+        XP = XP - XPREQ,
         document.getElementById('XPLVL').innerHTML = XPLVL;    
         document.getElementById('XP').innerHTML = XP;   
         gainXPLVL();         
