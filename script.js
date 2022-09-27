@@ -125,7 +125,7 @@ window.setInterval(function(){
 //PRESTIGE----------------------------------------------------------------------------------
 
 
-var prestigepoint = 0
+var prestigepoint = 0;
 function prestigepointClick(number){
      prestigepoint = prestigepoint + number;
     document.getElementById("prestigepoint").innerHTML = prestigepoint;
