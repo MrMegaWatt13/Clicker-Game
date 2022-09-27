@@ -51,14 +51,14 @@ window.setInterval(function(){
 var CBEffect = 0;
 
 function StartUpCBE(number){
-    XP = XP + number;
+    CBEffect = CBEffect + number;
     document.getElementById("CBEffect").innerHTML = CBEffect;
 };
 
 var CBEffectXP = 0;
 
 function StartUpCBEXP(number){
-    XP = XP + number;
+    CBEffectXP = CBEffectXP + number;
     document.getElementById("CBEffectXP").innerHTML = CBEffectXP;
 };
 
