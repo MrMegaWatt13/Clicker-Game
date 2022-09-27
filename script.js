@@ -50,42 +50,42 @@ window.setInterval(function(){
 
 var cbeffect = 0;
 
-function StartUpCBE(number){
+function startUpCBE(number){
     cbeffect = cbeffect + number;
     document.getElementById("cbeffect").innerHTML = cbeffect;
 };
 
-var CBEffectXP = 0;
+var cbeffectXP = 0;
 
-function StartUpCBEXP(number){
-    CBEffectXP = CBEffectXP + number;
-    document.getElementById("CBEffectXP").innerHTML = CBEffectXP;
+function startUpCBEXP(number){
+    cbeffectXP = cbeffectXP + number;
+    document.getElementById("cbeffectXP").innerHTML = cbeffectXP;
 };
 
-var XP = 0;
+var xp = 0;
 
 function gainXP(number){
-    XP = XP + number;
-    document.getElementById("XP").innerHTML = XP;
+    xp = xp + number;
+    document.getElementById("xp").innerHTML = xp;
 };
 
-var XPLVL = 0;
+var xpLVL = 0;
 
 function gainXPLVL(number){
-    XPLVL = XPLVL + number;
-    document.getElementById("XPLVL").innerHTML = XPLVL;
+    xpLVL = xpLVL + number;
+    document.getElementById("xpLVL").innerHTML = xpLVL;
 };
 
 function lvlxp(){
-    var XPREQ= Math.floor(50 * Math.pow(1.2,XPLVL));
-    if(XP >= XPREQ){
-        XPLVL = XPLVL + 1;
-        XP = XP - XPREQ,
-        document.getElementById('XP').innerHTML = XP;    
-        document.getElementById('XPLVL').innerHTML = XPLVL;          
+    var xpREQ= Math.floor(50 * Math.pow(1.2,xpLVL));
+    if(xp >= xpREQ){
+        xpLVL = xpLVL + 1;
+        xp = xp - xpREQ,
+        document.getElementById('xp').innerHTML = xp;    
+        document.getElementById('xpLVL').innerHTML = xpLVL;          
     };
-    var nextCost = Math.floor(50 * Math.pow(1.2,XPLVL));       
-    document.getElementById('XPREQ').innerHTML = XPREQ;
+    var nextCost = Math.floor(50 * Math.pow(1.2,xpLVL));       
+    document.getElementById('xpREQ').innerHTML = xpREQ;
 };
 
 window.setInterval(function(){
@@ -94,33 +94,17 @@ window.setInterval(function(){
     
 }, 10);
 
-function CBE(){
+function cbe(){
     
-    clicksClick(CBEffect);
-    gainXP(CBEffectXP);
+    clicksClick(cbeffect);
+    gainXP(cbeffectXP);
     
 };
 
-StartUpCBE(1);
-StartUpCBEXP(1);
+startUpCBE(1);
+startUpCBEXP(1);
 
-window.setInterval(function(){
-    
-    clicksClick(XPLVL);
-    
-}, 1000);
 
-window.setInterval(function(){
-    
-    prestigepointClick(XPLVL);
-    
-}, 10000);
-
-window.setInterval(function(){
-    
-    divinityClick(XPLVL);
-    
-}, 100000);
 
 //PRESTIGE----------------------------------------------------------------------------------
 
@@ -238,4 +222,21 @@ ResetDivinity();
 //VORTEX----------------------------------------------------------------------------------
 
 
-//end----------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------
+window.setInterval(function(){
+    
+    clicksClick(xpLVL);
+    
+}, 1000);
+
+window.setInterval(function(){
+    
+    prestigepointClick(xpLVL);
+    
+}, 10000);
+
+window.setInterval(function(){
+    
+    divinityClick(xpLVL);
+    
+}, 100000);
