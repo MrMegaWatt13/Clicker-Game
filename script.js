@@ -222,7 +222,7 @@ ResetDivinity();
 
 
 //----------------------------------------------------------------------------------
-window.setInterval(function(){
+/*window.setInterval(function(){
     
     clicksClick(xpLVL);
     
@@ -238,4 +238,4 @@ window.setInterval(function(){
     
     divinityClick(xpLVL);
     
-}, 100000);
+}, 100000);*/
