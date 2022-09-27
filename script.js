@@ -76,12 +76,24 @@ function gainXPLVL(number){
     document.getElementById("XPLVL").innerHTML = XPLVL;
 };
 
+function XPTOLVL() {
+    var XPREQ= Math.floor(50 * Math.pow(1.2,XPLVL));
+    if(XP >= XPREQ){
+    XP = XP - XPREQ,
+        document.getElementById('XPLVL').innerHTML = XPLVL;    
+        document.getElementById('XP').innerHTML = XP;   
+        gainXPLVL();         
+    };
+    var nextCost = Math.floor(50 * Math.pow(1.2,XPLVL));       
+    document.getElementById('XPREQ').innerHTML = XPREQ;
+};
+
 function CBE(){
     
     clicksClick(CBEffect);
     gainXP(CBEffectXP);
     
-}
+};
 
 StartUPCBE(1);
 StartUPCBEXP(1);
@@ -91,6 +103,18 @@ window.setInterval(function(){
     clicksClick(XPLVL);
     
 }, 1000);
+
+window.setInterval(function(){
+    
+    prestigepointClick(XPLVL);
+    
+}, 10000);
+
+window.setInterval(function(){
+    
+    divinityClick(XPLVL);
+    
+}, 100000);
 
 //PRESTIGE----------------------------------------------------------------------------------
 
@@ -111,7 +135,7 @@ function gonnaPrestige(){
         document.getElementById('prestige').innerHTML = prestige;    
         document.getElementById('click').innerHTML = click;   
         ResetPrestige();         
-    };
+    };
     var nextCost = Math.floor(1000 * Math.pow(1.34,prestige));       
     document.getElementById('prestigeCost').innerHTML = nextCost;
 };
