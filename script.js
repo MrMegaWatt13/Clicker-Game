@@ -83,8 +83,8 @@ function CBE(){
     
 }, 1000);
 
-startUPCBE(1);
-startUPCBEXP(1);
+StartUPCBE(1);
+StartUPCBEXP(1);
 
 window.setInterval(function(){
     
