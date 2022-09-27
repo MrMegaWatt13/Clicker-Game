@@ -76,7 +76,7 @@ function gainXPLVL(number){
     document.getElementById("XPLVL").innerHTML = XPLVL;
 };
 
-function XPTOLVL() {
+function lvlxp() {
     var XPREQ= Math.floor(50 * Math.pow(1.2,XPLVL));
     if(XP >= XPREQ){
         XPLVL = XPLVL + 1;
@@ -90,7 +90,7 @@ function XPTOLVL() {
 
 window.setInterval(function(){
     
-    XPTOLVL();
+    lvlxp();
     
 }, 10);
 
