@@ -72,7 +72,7 @@ function gainXP(number){
 var XPLVL = 0;
 
 function gainXPLVL(number){
-    XP = XP + number;
+    XPLVL = XPLVL + number;
     document.getElementById("XPLVL").innerHTML = XPLVL;
 };
 
@@ -81,7 +81,7 @@ function CBE(){
     clicksClick(CBEffect);
     gainXP(CBEffectXP);
     
-}, 1000);
+}
 
 StartUPCBE(1);
 StartUPCBEXP(1);
