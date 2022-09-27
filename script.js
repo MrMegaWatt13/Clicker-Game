@@ -48,7 +48,7 @@ window.setInterval(function(){
 //ClickedButtonEffects & XP----------------------------------------------------------------------------------
 
 
-var cbeffect = 0;
+/*var cbeffect = 0;
 
 function startUpCBE(number){
     cbeffect = cbeffect + number;
@@ -102,7 +102,7 @@ function cbe(){
 };
 
 startUpCBE(1);
-startUpCBEXP(1);
+startUpCBEXP(1);*/
 
 
 //PRESTIGE----------------------------------------------------------------------------------
