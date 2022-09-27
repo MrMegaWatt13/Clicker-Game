@@ -79,14 +79,20 @@ function gainXPLVL(number){
 function XPTOLVL() {
     var XPREQ= Math.floor(50 * Math.pow(1.2,XPLVL));
     if(XP >= XPREQ){
+        XPLVL = XPLVL + 1;
         XP = XP - XPREQ,
         document.getElementById('XPLVL').innerHTML = XPLVL;    
-        document.getElementById('XP').innerHTML = XP;   
-        gainXPLVL();         
+        document.getElementById('XP').innerHTML = XP;          
     };
     var nextCost = Math.floor(50 * Math.pow(1.2,XPLVL));       
     document.getElementById('XPREQ').innerHTML = XPREQ;
 };
+
+window.setInterval(function(){
+    
+    XPTOLVL();
+    
+}, 10);
 
 function CBE(){
     
