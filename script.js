@@ -48,11 +48,11 @@ window.setInterval(function(){
 //ClickedButtonEffects & XP----------------------------------------------------------------------------------
 
 
-var CBEffect = 0;
+var cbeffect = 0;
 
 function StartUpCBE(number){
-    CBEffect = CBEffect + number;
-    document.getElementById("CBEffect").innerHTML = CBEffect;
+    cbeffect = cbeffect + number;
+    document.getElementById("cbeffect").innerHTML = cbeffect;
 };
 
 var CBEffectXP = 0;
