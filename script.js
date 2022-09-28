@@ -179,8 +179,8 @@ function xpLVL(){
     if(xp >= xpCost){                                                                  
         xplvl = xplvl + 1;                                                                       
         xp = xp - xpCost,                                                      
-        document.getElementById('xp').innerHTML = xp;    
-        document.getElementById('xplvl').innerHTML = xplvl;
+        document.getElementById('xplvl').innerHTML = xplvl;    
+        document.getElementById('xp').innerHTML = xp;
         ResetXP();            
     };
     var nextCost = Math.floor(50 * Math.pow(1.2,xplvl));       
