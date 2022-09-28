@@ -74,7 +74,7 @@ function prestigepointClick(number){
 var prestige = 0;
 
 function gonnaPrestige(){
-    var prestigeCost= Math.floor(1000 * Math.pow(1.34,prestige));        
+    var prestigeCost= Math.floor(1000 * Math.pow(1.64,prestige));        
     if(click >= prestigeCost){                                                                  
         prestige = prestige + 1;                                                                       
         click = click - prestigeCost,                                                      
@@ -82,7 +82,7 @@ function gonnaPrestige(){
         document.getElementById('click').innerHTML = click;   
         ResetPrestige();         
     };
-    var nextCost = Math.floor(1000 * Math.pow(1.34,prestige));       
+    var nextCost = Math.floor(1000 * Math.pow(1.64,prestige));       
     document.getElementById('prestigeCost').innerHTML = nextCost;
 };
 
@@ -128,15 +128,15 @@ window.setInterval(function(){
 var metalbuttons = 0;
 
 function buymetalbuttons(){
-    var metalbuttonsCost= Math.floor(100 * Math.pow(1.15,metalbuttons));        
+    var metalbuttonsCost= Math.floor(100 * Math.pow(1.25,metalbuttons));        
     if(prestigepoint >= metalbuttonsCost){                                                                  
         metalbuttons = metalbuttons + 1; 
-        ce = ce + 5;                                                                      
+        cep = cep + 5;                                                                      
         prestigepoint = prestigepoint - metalbuttonsCost,                                                         
         document.getElementById('metalbuttons').innerHTML = metalbuttons;    
         document.getElementById('prestigepoint').innerHTML = prestigepoint;            
     };
-    var nextCost = Math.floor(100 * Math.pow(1.15,solidbuttons));       
+    var nextCost = Math.floor(100 * Math.pow(1.25,solidbuttons));       
     document.getElementById('metalbuttonsCost').innerHTML = nextCost;
 };
 
@@ -162,6 +162,7 @@ window.setInterval(function(){
     
 }, 2000);
 
+ver ref1 = 0;
 
 
 //DIVINITY & LUNAR----------------------------------------------------------------------------------
@@ -201,6 +202,7 @@ window.setInterval(function(){
 
 function ResetDivinity(){
    ce = 1;
+   cep = 0;
    click = 0;
    autoclicker = 0;
    autoclickerCost = 10;
@@ -218,7 +220,7 @@ function ResetDivinity(){
    prestige = 0;
    prestigeCost = 1000;
 }
-var ce, click,autoclicker, autoclickerII, autoclickerCost, autoclickerIICost, solidbuttons, solidbuttonsCost, goldenautoclicker, goldenautoclickerCost, metalbuttons, metalbuttonsCost, prestigepoint, prestige, prestigeCost;
+var ce, cep, click, autoclicker, autoclickerII, autoclickerCost, autoclickerIICost, solidbuttons, solidbuttonsCost, goldenautoclicker, goldenautoclickerCost, metalbuttons, metalbuttonsCost, prestigepoint, prestige, prestigeCost;
 ResetDivinity();
 
 
@@ -226,6 +228,8 @@ ResetDivinity();
 
 
 //ClickedButtonEffects----------------------------------------------------------------------------------
+
+var cep = 0;
 
 var ce = 0;
 
@@ -239,7 +243,11 @@ function ceEffect(){
 }; 
 
 function c(){
+
     clicksClick(ce);
+
+    clicksClick(cep);
+
 };
 
 cef(1);
