@@ -136,7 +136,7 @@ function buymetalbuttons(){
         document.getElementById('metalbuttons').innerHTML = metalbuttons;    
         document.getElementById('prestigepoint').innerHTML = prestigepoint;            
     };
-    var nextCost = Math.floor(100 * Math.pow(1.25,solidbuttons));       
+    var nextCost = Math.floor(100 * Math.pow(1.25,metalbuttons));       
     document.getElementById('metalbuttonsCost').innerHTML = nextCost;
 };
 
