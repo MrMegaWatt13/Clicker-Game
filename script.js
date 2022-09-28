@@ -168,7 +168,7 @@ ver ref1 = 0;
 //DIVINITY & LUNAR----------------------------------------------------------------------------------
 
 
-var divinityPoint = 0
+var divinityPoint = 0 
 function divinityClick(number){
      divinityPoint = divinityPoint + number;
     document.getElementById("divinityPoint").innerHTML = divinityPoint;
