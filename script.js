@@ -93,6 +93,7 @@ window.setInterval(function(){
 }, 1000);
 
 function ResetPrestige(){
+   ce = 1;
    click = 0;
    autoclicker = 0;
    autoclickerCost = 10;
@@ -101,7 +102,7 @@ function ResetPrestige(){
    solidbuttons = 0;
    solidbuttonCosts = 250;
 }
-var click, autoclicker, autoclickerII, autoclickerCost, autoclickerIICost, solidbuttons, solidbuttonsCost;
+var ce, click, autoclicker, autoclickerII, autoclickerCost, autoclickerIICost, solidbuttons, solidbuttonsCost;
 ResetPrestige();
 
 var goldenautoclicker = 0;
@@ -160,11 +161,7 @@ window.setInterval(function(){
 }, 1000);
 
 function refautoFunc(){
-    refautoFuncE(refinedautoclicker)
-};
-
-function refautoFuncE(){
-    clicksClick(autoclicker)
+    clicksClick(refinedautoclicker)
 };
 
 
@@ -204,6 +201,7 @@ window.setInterval(function(){
 }, 2500);
 
 function ResetDivinity(){
+   ce = 1;
    click = 0;
    autoclicker = 0;
    autoclickerCost = 10;
@@ -221,7 +219,7 @@ function ResetDivinity(){
    prestige = 0;
    prestigeCost = 1000;
 }
-var click,autoclicker, autoclickerII, autoclickerCost, autoclickerIICost, solidbuttons, solidbuttonsCost, goldenautoclicker, goldenautoclickerCost, metalbuttons, metalbuttonsCost, prestigepoint, prestige, prestigeCost;
+var ce, click,autoclicker, autoclickerII, autoclickerCost, autoclickerIICost, solidbuttons, solidbuttonsCost, goldenautoclicker, goldenautoclickerCost, metalbuttons, metalbuttonsCost, prestigepoint, prestige, prestigeCost;
 ResetDivinity();
 
 
