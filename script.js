@@ -45,65 +45,6 @@ window.setInterval(function(){
     
 }, 333);
 
-//ClickedButtonEffects & XP----------------------------------------------------------------------------------
-
-
-/*var cbeffect = 0;
-
-function startUpCBE(number){ 
-    cbeffect = cbeffect + number;
-    document.getElementById("cbeffect").innerHTML = cbeffect;
-};
-
-var cbeffectXP = 0;
-
-function startUpCBEXP(number){
-    cbeffectXP = cbeffectXP + number;
-    document.getElementById("cbeffectXP").innerHTML = cbeffectXP;
-};
-
-var xp = 0;
-
-function gainXP(number){
-    xp = xp + number;
-    document.getElementById("xp").innerHTML = xp;
-};
-
-var xpLVL = 0;
-
-function gainXPLVL(number){
-    xpLVL = xpLVL + number;
-    document.getElementById("xpLVL").innerHTML = xpLVL;
-};
-
-function lvlxp(){
-    var xpREQ= Math.floor(50 * Math.pow(1.2,xpLVL));
-    if(xp >= xpREQ){
-        xpLVL = xpLVL + 1;
-        xp = xp - xpREQ,
-        document.getElementById('xp').innerHTML = xp;    
-        document.getElementById('xpLVL').innerHTML = xpLVL;          
-    };
-    var nextCost = Math.floor(50 * Math.pow(1.2,xpLVL));       
-    document.getElementById('xpREQ').innerHTML = xpREQ;
-};
-
-window.setInterval(function(){
-    
-    lvlxp();
-    
-}, 10);
-
-function cbe(){
-    
-    clicksClick(cbeffect);
-    gainXP(cbeffectXP);
-    
-};
-
-startUpCBE(1);
-startUpCBEXP(1);*/
-
 
 //PRESTIGE----------------------------------------------------------------------------------
 
@@ -221,21 +162,75 @@ ResetDivinity();
 //VORTEX----------------------------------------------------------------------------------
 
 
-//----------------------------------------------------------------------------------
-/*window.setInterval(function(){
-    
-    clicksClick(xpLVL);
-    
+//ClickedButtonEffects & XP----------------------------------------------------------------------------------
+
+
+var xp = 0; 
+
+function xpGain(number){
+    xp = xp + number;
+    document.getElementById("xp").innerHTML = xp;
+};
+
+var xplvl = 0; 
+
+function xpLVL(){
+    var xpCost= Math.floor(50 * Math.pow(1.2,xplvl));        
+    if(xp >= xpCost){                                                                  
+        xplvl = xplvl + 1;                                                                       
+        xp = xp - xpCost,                                                      
+        document.getElementById('xp').innerHTML = xp;    
+        document.getElementById('xplvl').innerHTML = xplvl;
+        ResetXP();            
+    };
+    var nextCost = Math.floor(50 * Math.pow(1.2,xplvl));       
+    document.getElementById('xpCost').innerHTML = nextCost;
+};
+
+window.setInterval(function(){
+    
+    clicksClick(xplvl);
+    
 }, 1000);
 
 window.setInterval(function(){
-    
-    prestigepointClick(xpLVL);
-    
-}, 10000);
+    
+    prestigepointClick(xplvl);
+    
+}, 1000);
 
 window.setInterval(function(){
-    
-    divinityClick(xpLVL);
-    
-}, 100000);*/
+    
+    divinityClick(xplvl);
+    
+}, 1000);
+
+function ResetXP(){
+   xp = 0;
+}
+
+var xp;
+ResetXP();
+
+var ce = 0;
+
+function cef(number){
+    ce = ce + number;
+    document.getElementById("ce").innerHTML = ce;
+};
+
+var ce2 = 0;
+
+function ce2f(number){
+    ce2 = ce2 + number;
+    document.getElementById("ce2").innerHTML = ce2;
+};
+
+function ceEffect(){
+    
+    clicksClick(ce)
+    xpGain(ce2)
+}; 
+
+cef(1);
+ce2f(1);
