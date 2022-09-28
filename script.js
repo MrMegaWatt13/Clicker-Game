@@ -154,15 +154,15 @@ function buyrefinedautoclicker(){
     document.getElementById('refinedautoclickerCost').innerHTML = nextCost;
 };
 
+var refE1 = 0;
+
 window.setInterval(function(){
     
-    if(refinedautoclicker >= ref1){
+    if(refinedautoclicker >= refE1){
        clicksClick(autoclicker)
     };
     
 }, 2000);
-
-ver ref1 = 0;
 
 
 //DIVINITY & LUNAR----------------------------------------------------------------------------------
