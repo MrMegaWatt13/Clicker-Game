@@ -162,7 +162,7 @@ window.setInterval(function(){
        clicksClick(autoclicker)
     };
     
-}, 2000);*\
+}, 2000);*/
 
 
 //DIVINITY & LUNAR----------------------------------------------------------------------------------
