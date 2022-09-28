@@ -142,7 +142,7 @@ function buymetalbuttons(){
 
 var refinedautoclicker = 0;
 
-function buyrefinedautoclicker(){
+/*function buyrefinedautoclicker(){
     var refinedautoclickerCost= Math.floor(100 * Math.pow(Infinity,refinedautoclicker));        
     if(prestigepoint >= refinedautoclickerCost){                                                                  
         refinedautoclicker = refinedautoclicker + 1;                                                                      
@@ -162,7 +162,7 @@ window.setInterval(function(){
        clicksClick(autoclicker)
     };
     
-}, 2000);
+}, 2000);*\
 
 
 //DIVINITY & LUNAR----------------------------------------------------------------------------------
