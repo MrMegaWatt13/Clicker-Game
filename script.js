@@ -207,7 +207,7 @@ window.setInterval(function(){
 
 function ResetXP(){
    xp = 0;
-};
+}
 
 var xp;
 ResetXP();
@@ -227,11 +227,21 @@ function ce2f(number){
 };
 
 function ceEffect(){   
-    clicksClick(ce);
-    xpGain(ce2);
+    c();
+    c2();
 }; 
 
+function c(){
+    clicksClick(ce);
+};
+
+function c2(){
+    xpGain(ce2);
+};
 
 cef(1);
+
 ce2f(1);
+
+
 //end
