@@ -45,6 +45,21 @@ window.setInterval(function(){
     
 }, 333);
 
+var solidbuttons = 0;
+
+function buysolidbuttons(){
+    var solidbuttonsCost= Math.floor(250 * Math.pow(1.15,solidbuttons));        
+    if(click >= solidbuttonsCost){                                                                  
+        solidbuttons = solidbuttons + 1; 
+        ce = ce + 1;                                                                      
+        click = click - solidbuttonsCost,                                                         
+        document.getElementById('solidbuttons').innerHTML = solidbuttons;    
+        document.getElementById('click').innerHTML = click;            
+    };
+    var nextCost = Math.floor(250 * Math.pow(1.15,solidbuttons));       
+    document.getElementById('solidbuttonsCost').innerHTML = nextCost;
+};
+
 
 //PRESTIGE----------------------------------------------------------------------------------
 
@@ -107,6 +122,49 @@ window.setInterval(function(){
     
 }, 100);
 
+var metalbuttons = 0;
+
+function buymetalbuttons(){
+    var metalbuttonsCost= Math.floor(100 * Math.pow(1.15,metalbuttons));        
+    if(prestigepoint >= metalbuttonsCost){                                                                  
+        metalbuttons = metalbuttons + 1; 
+        ce = ce + 5;                                                                      
+        prestigepoint = prestigepoint - metalbuttonsCost,                                                         
+        document.getElementById('metalbuttons').innerHTML = metalbuttons;    
+        document.getElementById('prestigepoint').innerHTML = prestigepoint;            
+    };
+    var nextCost = Math.floor(100 * Math.pow(1.15,solidbuttons));       
+    document.getElementById('metalbuttonsCost').innerHTML = nextCost;
+};
+
+var refinedautoclicker = 0;
+
+function buyrefinedautoclicker(){
+    var refinedautoclickerCost= Math.floor(100 * Math.pow(1.75,refinedautoclicker));        
+    if(prestigepoint >= refinedautoclickerCost){                                                                  
+        refinedautoclicker = refinedautoclicker + 1;                                                                      
+        prestigepoint = prestigepoint - refinedautoclickerCost,                                                         
+        document.getElementById('refinedautoclicker').innerHTML = refinedautoclicker;    
+        document.getElementById('prestigepoint').innerHTML = prestigepoint;            
+    };
+    var nextCost = Math.floor(100 * Math.pow(1.75,refinedautoclicker));       
+    document.getElementById('refinedautoclickerCost').innerHTML = nextCost;
+};
+
+window.setInterval(function(){
+    
+    refautoFunc(autoclicker);
+    
+}, 1000);
+
+function refautoFunc(){
+    refautoFuncE(refinedautoclicker)
+};
+
+function refautoFuncE(){
+    clicksClick(autoclicker)
+};
+
 
 //DIVINITY & LUNAR----------------------------------------------------------------------------------
 
@@ -162,55 +220,7 @@ ResetDivinity();
 //VORTEX----------------------------------------------------------------------------------
 
 
-//ClickedButtonEffects & XP----------------------------------------------------------------------------------
-
-
-var xp = 0; 
-
-function xpGain(number){
-    xp = xp + number;
-    document.getElementById("xp").innerHTML = xp;
-};
-
-var xplvl = 0; 
-
-function xpLVL(){
-    var xpCost= Math.floor(50 * Math.pow(1.2,xplvl));        
-    if(xp >= xpCost){                                                                  
-        xplvl = xplvl + 1;                                                                       
-        xp = xp - xpCost,                                                      
-        document.getElementById('xplvl').innerHTML = xplvl;    
-        document.getElementById('xp').innerHTML = xp;
-        ResetXP();            
-    };
-    var nextCost = Math.floor(50 * Math.pow(1.2,xplvl));       
-    document.getElementById('xpCost').innerHTML = nextCost;
-};
-
-window.setInterval(function(){
-    
-    clicksClick(xplvl);
-    
-}, 1000);
-
-window.setInterval(function(){
-    
-    prestigepointClick(xplvl);
-    
-}, 1000);
-
-window.setInterval(function(){
-    
-    divinityClick(xplvl);
-    
-}, 1000);
-
-function ResetXP(){
-   xp = 0;
-}
-
-var xp;
-ResetXP();
+//ClickedButtonEffects----------------------------------------------------------------------------------
 
 var ce = 0;
 
@@ -219,29 +229,15 @@ function cef(number){
     document.getElementById("ce").innerHTML = ce;
 };
 
-var ce2 = 0;
-
-function ce2f(number){
-    ce2 = ce2 + number;
-    document.getElementById("ce2").innerHTML = ce2;
-};
-
 function ceEffect(){   
     c();
-    c2();
 }; 
 
 function c(){
     clicksClick(ce);
 };
 
-function c2(){
-    xpGain(ce2);
-};
-
 cef(1);
-
-ce2f(1);
 
 
 //end
