@@ -100,7 +100,7 @@ function ResetPrestige(){
    autoclickerII = 0;
    autoclickerIICost = 150;
    solidbuttons = 0;
-   solidbuttonCosts = 250;
+   solidbuttonsCosts = 250;
 }
 var ce, click, autoclicker, autoclickerII, autoclickerCost, autoclickerIICost, solidbuttons, solidbuttonsCost;
 ResetPrestige();
@@ -156,12 +156,12 @@ function buyrefinedautoclicker(){
 
 window.setInterval(function(){
     
-    refautoFunc(autoclicker);
+    refautoFunc(refinedautoclicker);
     
 }, 1000);
 
 function refautoFunc(){
-    clicksClick(refinedautoclicker)
+    clicksClick(autoclicker)
 };
 
 
