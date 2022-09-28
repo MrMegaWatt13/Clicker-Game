@@ -227,9 +227,11 @@ function ce2f(number){
 };
 
 function ceEffect(){   
-    clicksClick(ce)
-    xpGain(ce2)
+    clicksClick(ce);
+    xpGain(ce2);
 }; 
+
 
 cef(1);
 ce2f(1);
+//end
