@@ -10,8 +10,7 @@ var autoclicker = 0;
 function buyAutoClicker(){
     var autoclickerCost= Math.floor(10 * Math.pow(1.1,autoclicker));        
     if(click >= autoclickerCost){                                                                  
-        autoclicker = autoclicker + 1;  
-        refautoE = refautoE + 1;                                                                     
+        autoclicker = autoclicker + 1;                                                                   
         click = click - autoclickerCost,                                                         
         document.getElementById('autoclicker').innerHTML = autoclicker;    
         document.getElementById('click').innerHTML = click;            
