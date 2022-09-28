@@ -144,30 +144,26 @@ function buymetalbuttons(){
 var refinedautoclicker = 0;
 
 function buyrefinedautoclicker(){
-    var refinedautoclickerCost= Math.floor(100 * Math.pow(1.75,refinedautoclicker));        
+    var refinedautoclickerCost= Math.floor(100 * Math.pow(Infinity,refinedautoclicker));        
     if(prestigepoint >= refinedautoclickerCost){                                                                  
         refinedautoclicker = refinedautoclicker + 1;                                                                      
         prestigepoint = prestigepoint - refinedautoclickerCost,                                                         
         document.getElementById('refinedautoclicker').innerHTML = refinedautoclicker;    
         document.getElementById('prestigepoint').innerHTML = prestigepoint;            
     };
-    var nextCost = Math.floor(100 * Math.pow(1.75,refinedautoclicker));       
+    var nextCost = Math.floor(100 * Math.pow(Infinity,refinedautoclicker));       
     document.getElementById('refinedautoclickerCost').innerHTML = nextCost;
 };
 
 window.setInterval(function(){
     
-    refautoeff(refinedautoclicker);
+    if(refinedautoclicker >= ref1){
+       clicksClick(autoclicker)
+    };
     
-}, 1000);
+}, 2000);
 
-var refautoE = 0;
 
-function refautoeff(){
-    
-    clicksClick(refautoE)
-
-}
 
 //DIVINITY & LUNAR----------------------------------------------------------------------------------
 
