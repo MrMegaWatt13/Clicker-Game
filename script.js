@@ -8,7 +8,7 @@ var click = 0;
 
 function clicksClick(number){
     click = click + number;
-    document.getElementById("click").innerHTML = click;
+    update();
 };
 
 var autoclicker = 0;
