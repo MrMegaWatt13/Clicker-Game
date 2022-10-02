@@ -1,3 +1,28 @@
+//1
+//2
+//3
+function update(){
+
+   document.getElementById("click").innerHTML = click;
+   document.getElementById("clicksMultiplier").innerHTML = clicksMultiplier;
+   document.getElementById("autoclicker").innerHTML = autoclicker;
+   document.getElementById("autoclickerII").innerHTML = autoclickerII;
+   document.getElementById("autoclickerIICost").innerHTML = autoclickerIICost;
+   document.getElementById("autoclickerIII").innerHTML = autoclickerIII;
+   document.getElementById("autoclickerIIICost").innerHTML = autoclickerIIICost;
+   document.getElementById("solidbuttons").innerHTML = solidbuttons;
+   document.getElementById("solidbuttonsCost").innerHTML = solidbuttonsCost;
+   document.getElementById("goldenautoclicker").innerHTML = goldenautoclicker;
+   document.getElementById("goldenautoclickerCost").innerHTML = goldenautoclickerCost;
+   document.getElementById("metalbuttons").innerHTML = metalbuttons;
+   document.getElementById("metalbuttonsCost").innerHTML = metalbuttonsCost;
+   document.getElementById("multipliedClicks").innerHTML = multipliedClicks;
+   document.getElementById("multipliedClicksCost").innerHTML = multipliedClicksCost;
+
+};
+
+var clicksMultiplier = 1;
+
 var click = 0; 
 
 function clicksClick(number){
@@ -19,12 +44,6 @@ function buyAutoClicker(){
     document.getElementById('autoclickerCost').innerHTML = nextCost;
 };
 
-window.setInterval(function(){
-    
-    clicksClick(autoclicker); 
-    
-}, 1000);
-
 var autoclickerII = 0;
 
 function buyAutoClickerII(){
@@ -39,11 +58,19 @@ function buyAutoClickerII(){
     document.getElementById('autoclickerIICost').innerHTML = nextCost;
 };
 
-window.setInterval(function(){
-    
-    clicksClick(autoclickerII); 
-    
-}, 333);
+var autoclickerIII = 0;
+
+function buyAutoClickerIII(){
+    var autoclickerIIICost= Math.floor(1000 * Math.pow(1.2,autoclickerIII));        
+    if(click >= autoclickerIIICost){                                                                  
+        autoclickerIII = autoclickerIII + 1;                                                                       
+        click = click - autoclickerIIICost,                                                         
+        document.getElementById('autoclickerIII').innerHTML = autoclickerIII;    
+        document.getElementById('click').innerHTML = click;            
+    };
+    var nextCost = Math.floor(1000 * Math.pow(1.2,autoclickerII));       
+    document.getElementById('autoclickerIIICost').innerHTML = nextCost;
+};
 
 var solidbuttons = 0;
 
@@ -86,11 +113,6 @@ function gonnaPrestige(){
     document.getElementById('prestigeCost').innerHTML = nextCost;
 };
 
-window.setInterval(function(){
-    
-    prestigepointClick(prestige);
-    
-}, 1000);
 
 function ResetPrestige(){
    ce = 1;
@@ -140,29 +162,20 @@ function buymetalbuttons(){
     document.getElementById('metalbuttonsCost').innerHTML = nextCost;
 };
 
-var refinedautoclicker = 0;
+var multipliedClicks = 0;
 
-/*function buyrefinedautoclicker(){
-    var refinedautoclickerCost= Math.floor(100 * Math.pow(Infinity,refinedautoclicker));        
-    if(prestigepoint >= refinedautoclickerCost){                                                                  
-        refinedautoclicker = refinedautoclicker + 1;                                                                      
-        prestigepoint = prestigepoint - refinedautoclickerCost,                                                         
-        document.getElementById('refinedautoclicker').innerHTML = refinedautoclicker;    
+function buymultipliedClicks(){
+    var multipliedClicksCost= Math.floor(200 * Math.pow(1.89,multipliedClicks));        
+    if(prestigepoint >= multipliedClicksCost){                                                                  
+        multipliedClicks = multipliedClicks + 1; 
+        clicksMultiplier = clicksMultiplier + 0.2;                                                                     
+        prestigepoint = prestigepoint - multipliedClicksCost,                                                         
+        document.getElementById('multipliedClicks').innerHTML = multipliedClicks;    
         document.getElementById('prestigepoint').innerHTML = prestigepoint;            
     };
-    var nextCost = Math.floor(100 * Math.pow(Infinity,refinedautoclicker));       
-    document.getElementById('refinedautoclickerCost').innerHTML = nextCost;
+    var nextCost = Math.floor(200 * Math.pow(1.89,refinedautoclicker));       
+    document.getElementById('multipliedClicksCost').innerHTML = nextCost;
 };
-
-var refE1 = 0;
-
-window.setInterval(function(){
-    
-    if(refinedautoclicker >= refE1){
-       clicksClick(autoclicker)
-    };
-    
-}, 2000);*/
 
 
 //DIVINITY & LUNAR----------------------------------------------------------------------------------
@@ -235,7 +248,6 @@ var ce = 0;
 
 function cef(number){
     ce = ce + number;
-    document.getElementById("ce").innerHTML = ce;
 };
 
 function ceEffect(){   
@@ -253,4 +265,32 @@ function c(){
 cef(1);
 
 
-//end
+//Auto Effects----------------------------------------------------------------------------------
+
+//clicks
+
+window.setInterval(function(){
+    
+    click = click + autoclicker*1*clicksMultiplier;
+    click = click + autoclickerII*3*clicksMultiplier; 
+    click = click + autoclickerIII*10*clicksMultiplier;
+    click = click + goldenautoclicker*10*clicksMultiplier; 
+  //click = click + divinityclicker*25*clicksMultiplier;
+  //click = click + darkclicker*100*clicksMultiplier; 
+    update();   
+ 
+}, 1000);
+
+//prestige
+
+window.setInterval.(function(){
+    
+    prestigepoint = prestigepoint + prestige*1;
+    
+}, 1000);
+
+//divinity
+
+/*window.setInterval.(function(){
+
+}, 1000);*/
