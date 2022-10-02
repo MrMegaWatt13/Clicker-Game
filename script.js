@@ -1,25 +1,6 @@
 //1
 //2
 //3
-function update(){
-
-   document.getElementById("click").innerHTML = click;
-   document.getElementById("clicksMultiplier").innerHTML = clicksMultiplier;
-   document.getElementById("autoclicker").innerHTML = autoclicker;
-   document.getElementById("autoclickerII").innerHTML = autoclickerII;
-   document.getElementById("autoclickerIICost").innerHTML = autoclickerIICost;
-   document.getElementById("autoclickerIII").innerHTML = autoclickerIII;
-   document.getElementById("autoclickerIIICost").innerHTML = autoclickerIIICost;
-   document.getElementById("solidbuttons").innerHTML = solidbuttons;
-   document.getElementById("solidbuttonsCost").innerHTML = solidbuttonsCost;
-   document.getElementById("goldenautoclicker").innerHTML = goldenautoclicker;
-   document.getElementById("goldenautoclickerCost").innerHTML = goldenautoclickerCost;
-   document.getElementById("metalbuttons").innerHTML = metalbuttons;
-   document.getElementById("metalbuttonsCost").innerHTML = metalbuttonsCost;
-   document.getElementById("multipliedClicks").innerHTML = multipliedClicks;
-   document.getElementById("multipliedClicksCost").innerHTML = multipliedClicksCost;
-
-};
 
 var clicksMultiplier = 1;
 
@@ -123,8 +104,9 @@ function ResetPrestige(){
    autoclickerIICost = 150;
    solidbuttons = 0;
    solidbuttonsCosts = 250;
+   update();
 }
-var ce, click, autoclicker, autoclickerII, autoclickerCost, autoclickerIICost, solidbuttons, solidbuttonsCost;
+var ce, click, autoclicker, autoclickerII, autoclickerIII, autoclickerCost, autoclickerIICost, autoclickerIIICost, solidbuttons, solidbuttonsCost;
 ResetPrestige();
 
 var goldenautoclicker = 0;
@@ -140,12 +122,6 @@ function buyGoldenAutoClicker(){
     var nextCost = Math.floor(50 * Math.pow(1.15,goldenautoclicker));       
     document.getElementById('goldenautoclickerCost').innerHTML = nextCost;
 };
-
-window.setInterval(function(){
-    
-    clicksClick(goldenautoclicker);
-    
-}, 100);
 
 var metalbuttons = 0;
 
@@ -173,7 +149,7 @@ function buymultipliedClicks(){
         document.getElementById('multipliedClicks').innerHTML = multipliedClicks;    
         document.getElementById('prestigepoint').innerHTML = prestigepoint;            
     };
-    var nextCost = Math.floor(200 * Math.pow(1.89,refinedautoclicker));       
+    var nextCost = Math.floor(200 * Math.pow(1.89,multipliedClicks));       
     document.getElementById('multipliedClicksCost').innerHTML = nextCost;
 };
 
@@ -232,6 +208,7 @@ function ResetDivinity(){
    prestigepoint = 0;
    prestige = 0;
    prestigeCost = 1000;
+   update();
 }
 var ce, cep, click, autoclicker, autoclickerII, autoclickerCost, autoclickerIICost, solidbuttons, solidbuttonsCost, goldenautoclicker, goldenautoclickerCost, metalbuttons, metalbuttonsCost, prestigepoint, prestige, prestigeCost;
 ResetDivinity();
@@ -269,24 +246,21 @@ cef(1);
 
 //clicks
 
-window.setInterval(function(){
-    
+window.setInterval(function(){  
     click = click + autoclicker*1*clicksMultiplier;
     click = click + autoclickerII*3*clicksMultiplier; 
     click = click + autoclickerIII*10*clicksMultiplier;
     click = click + goldenautoclicker*10*clicksMultiplier; 
   //click = click + divinityclicker*25*clicksMultiplier;
   //click = click + darkclicker*100*clicksMultiplier; 
-    update();   
- 
+    update();    
 }, 1000);
 
 //prestige
 
-window.setInterval.(function(){
-    
+window.setInterval.(function(){   
     prestigepoint = prestigepoint + prestige*1;
-    
+    update();  
 }, 1000);
 
 //divinity
@@ -294,3 +268,25 @@ window.setInterval.(function(){
 /*window.setInterval.(function(){
 
 }, 1000);*/
+
+//update
+
+function update(){
+
+   document.getElementById("click").innerHTML = click;
+   document.getElementById("clicksMultiplier").innerHTML = clicksMultiplier;
+   document.getElementById("autoclicker").innerHTML = autoclicker;
+   document.getElementById("autoclickerII").innerHTML = autoclickerII;
+   document.getElementById("autoclickerIICost").innerHTML = autoclickerIICost;
+   document.getElementById("autoclickerIII").innerHTML = autoclickerIII;
+   document.getElementById("autoclickerIIICost").innerHTML = autoclickerIIICost;
+   document.getElementById("solidbuttons").innerHTML = solidbuttons;
+   document.getElementById("solidbuttonsCost").innerHTML = solidbuttonsCost;
+   document.getElementById("goldenautoclicker").innerHTML = goldenautoclicker;
+   document.getElementById("goldenautoclickerCost").innerHTML = goldenautoclickerCost;
+   document.getElementById("metalbuttons").innerHTML = metalbuttons;
+   document.getElementById("metalbuttonsCost").innerHTML = metalbuttonsCost;
+   document.getElementById("multipliedClicks").innerHTML = multipliedClicks;
+   document.getElementById("multipliedClicksCost").innerHTML = multipliedClicksCost;
+
+};
