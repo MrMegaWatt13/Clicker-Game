@@ -258,7 +258,7 @@ window.setInterval(function(){ 
 
 //prestige
 
-window.setInterval.(function(){   
+window.setInterval(function(){   
     prestigepoint = prestigepoint + prestige*1;
     update();  
 }, 1000);
